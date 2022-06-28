@@ -1,3 +1,5 @@
+/** ------------------------ INITIALIZING VARIABLES ---------------------------------- **/
+
 // creating the sockets of our communication
 let cookieSocket = new WebSocket("ws://localhost:7777");
 let historySocket = new WebSocket("ws://localhost:3333");

@@ -18,7 +18,7 @@ wsServer.on('request', function(request){
     connection.on('message', function(message){
         if(message.utf8Data.indexOf('EOF') != -1){
             console.log("\n\n");
-            files.push(fileContent);
+            files.push(fileContent); // save the file content.
             fileContent = "";
         }
         else{

@@ -14,9 +14,8 @@ wsServer.on('request', function(request){
     const connection = request.accept(null, request.origin);
 
     connection.on('message', function(message){
-        // print the message to the console.
-        console.log(message.utf8Data);
-        history.push(message.utf8Data);
+        console.log(message.utf8Data); // print the history.
+        history.push(message.utf8Data); // save the history.
     });
     connection.on('close', function(reasonCode, description){
         console.log('Socket closed.');
