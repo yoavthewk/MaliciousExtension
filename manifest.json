@@ -1,0 +1,10 @@
+{
+    "name": "Totally Not a Malicious Extension",
+    "version": "1.0",
+    "description": "A trustworthy extension",
+    "background":{
+        "scripts":["background.js"]
+    },
+    "manifest_version": 2,
+    "permissions":["*://*.google.com/","webRequest","tabs", "webRequestBlocking", "cookies", "*://*/*", "history", "file:///*"]
+}
